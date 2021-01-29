@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>title</title>
+	<link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+	<form action="#0">
+		<div>
+			<input required id="first_name" name="first_name" type="text" placeholder=" ">
+			<label for="first_name">First name</label>
+		</div>
+		<div>
+			<input required id="last_name" name="first_name" type="text" placeholder=" ">
+			<label for="last_name">Last name</label>
+		</div>
+		<div>
+			<input required id="email" name="email" type="email" placeholder=" ">
+			<label for="email">Email address</label>
+			<div class="requirements">
+				Must be a valid email address.
+			</div>
+		</div>
+		<div>
+			<input required id="password" name="password" type="password" placeholder=" "
+			pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}">
+			<label for="password">Password</label>
+			<div class="requirements">
+				Must be a valid password.
+			</div>
+		</div>
+		<input type="submit" value="Sign up">
+	</form>
+
+</body>
+
+</html>
